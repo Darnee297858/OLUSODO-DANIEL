@@ -22,5 +22,5 @@ An ultra-sophisticated, interactive personal portfolio web application built for
 ## 🚀 Quick Setup & Local Run
 
 1. Open VS Code.
-2. Select **File > Open Folder...** and choose the extracted `daniel-olusodo-portfolio` folder.
+2. Select **File > Open Folder...** and choose the extracted `driol.vercel.app` folder.
 3. Open `index.html` with **Live Server** or open directly in any browser!
