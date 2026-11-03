@@ -383,4 +383,165 @@
                 <div class="glass-card p-8 rounded-2xl">
                     <h3 class="text-2xl font-bold mb-6">Social Channels & Links</h3>
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        <a href="https://www.linkedin.com/in/daniel-olusodo-148808436" target="_blank" class="p-4 rounded-xl bg-gray-900 border border-gray-800 hover:border-
+                        <a href="https://www.linkedin.com/in/daniel-olusodo-148808436" target="_blank" class="p-4 rounded-xl bg-gray-900 border border-gray-800 hover:border-green-500 flex items-center gap-3 transition group">
+                            <i class="fa-brands fa-linkedin text-xl text-green-400"></i>
+                            <div>
+                                <span class="font-semibold block text-sm group-hover:text-green-400">LinkedIn</span>
+                                <span class="text-xs text-gray-400">Professional Profile</span>
+                            </div>
+                        </a>
+
+                        <a href="https://github.com/Darnee297858" target="_blank" class="p-4 rounded-xl bg-gray-900 border border-gray-800 hover:border-green-500 flex items-center gap-3 transition group">
+                            <i class="fa-brands fa-github text-xl text-green-400"></i>
+                            <div>
+                                <span class="font-semibold block text-sm group-hover:text-green-400">GitHub</span>
+                                <span class="text-xs text-gray-400">Code Repositories</span>
+                            </div>
+                        </a>
+
+                        <a href="https://twitter.com/TobsyDriol" target="_blank" class="p-4 rounded-xl bg-gray-900 border border-gray-800 hover:border-green-500 flex items-center gap-3 transition group">
+                            <i class="fa-brands fa-twitter text-xl text-green-400"></i>
+                            <div>
+                                <span class="font-semibold block text-sm group-hover:text-green-400">X (Twitter)</span>
+                                <span class="text-xs text-gray-400">@TobsyDriol</span>
+                            </div>
+                        </a>
+
+                        <a href="https://linktr.ee/darny6" target="_blank" class="p-4 rounded-xl bg-gray-900 border border-gray-800 hover:border-green-500 flex items-center gap-3 transition group">
+                            <i class="fa-solid fa-link text-xl text-green-400"></i>
+                            <div>
+                                <span class="font-semibold block text-sm group-hover:text-green-400">Linktree</span>
+                                <span class="text-xs text-gray-400">All Links Hub</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-12 border-t border-gray-800 text-center text-sm text-gray-500">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p>&copy; 2026 Daniel Olusodo. Computer Engineering (400L). All Rights Reserved.</p>
+            <div class="flex items-center gap-6">
+                <a href="https://github.com/Darnee297858" target="_blank" class="hover:text-green-400"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/daniel-olusodo-148808436" target="_blank" class="hover:text-green-400"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="mailto:danielolusodo74@gmail.com" class="hover:text-green-400"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- RESUME CV MODAL -->
+    <div id="cv-modal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-md hidden items-center justify-center p-4">
+        <div class="glass-card max-w-2xl w-full p-8 rounded-2xl relative border border-green-500/30">
+            <button onclick="closeCvModal()" class="absolute top-6 right-6 text-gray-400 hover:text-white text-xl"><i class="fa-solid fa-xmark"></i></button>
+            <div class="flex items-center gap-4 mb-6">
+                <div class="w-12 h-12 rounded-xl bg-green-500/10 text-green-400 flex items-center justify-center text-xl">
+                    <i class="fa-solid fa-file-lines"></i>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold">Daniel Olusodo - Resume / CV</h3>
+                    <p class="text-xs text-green-400">400-Level Computer Engineering Student</p>
+                </div>
+            </div>
+            <div class="space-y-4 text-sm text-gray-300 max-h-[60vh] overflow-y-auto pr-2">
+                <div>
+                    <h4 class="font-bold text-white mb-1">Education</h4>
+                    <p class="text-gray-400">B.Sc. Computer Engineering (400 Level / Graduating Year 5)<br>Strong foundation in Embedded Systems, Data Structures, Networks, and Software Development.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-white mb-1">Technical Skills</h4>
+                    <p class="text-gray-400">JavaScript, TypeScript, React.js, Next.js, Vite, Tailwind CSS, Git/GitHub, Vercel Deployment, RESTful APIs, Python, Embedded C.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-white mb-1">Flagship Projects Deployed</h4>
+                    <ul class="list-disc list-inside text-gray-400 space-y-1">
+                        <li><strong>DRIOL // PULSE:</strong> Enterprise IoT hardware telemetry suite with live WebSocket charts & AI anomaly forecasting (Next.js / TypeScript).</li>
+                        <li><strong>NaijaGrid:</strong> Power status tracker & verified local artisan network (Next.js).</li>
+                        <li><strong>Aether Cloud:</strong> Interactive cloud topology simulator & metrics dashboard (React).</li>
+                        <li><strong>Nexus Luxe Store:</strong> Modern e-commerce storefront with cart & filters (React / Vite).</li>
+                        <li><strong>NexusFlow Kanban:</strong> Task workflow productivity board with persistence (React / Vite).</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 flex justify-end gap-4">
+                <button onclick="closeCvModal()" class="px-6 py-2.5 rounded-xl bg-gray-800 text-gray-300 hover:bg-gray-700 text-sm font-semibold">Close</button>
+                 <a href="./cv.pdf" download="Daniel_Olusodo_CV.pdf" class="px-6 py-2.5 rounded-xl bg-green-500 text-black hover:bg-green-400 text-sm font-bold flex items-center gap-2">
+                    <i class="fa-solid fa-file-arrow-down"></i> Download PDF CV
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- LIVE PREVIEW MODAL -->
+    <div id="preview-modal" class="fixed inset-0 z-50 bg-black/90 hidden flex flex-col">
+        <div class="bg-gray-900 border-b border-gray-800 px-6 py-4 flex items-center justify-between">
+            <h3 id="preview-title" class="font-bold text-lg text-green-400">Live Preview</h3>
+            <button onclick="closePreview()" class="px-4 py-2 rounded-lg bg-gray-800 hover:bg-gray-700 text-sm font-semibold"><i class="fa-solid fa-xmark mr-2"></i> Close Preview</button>
+        </div>
+        <div class="flex-1 w-full bg-black relative">
+            <iframe id="preview-iframe" class="w-full h-full border-0"></iframe>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+        // Cyber Boot Sequence Simulation
+        const logs = [
+            "> INITIALIZING AETHER_KERNEL v4.0.2...",
+            "> VERIFYING NODE ACCESS PERMISSIONS...",
+            "> ALLOCATING DISTRIBUTED MESH MEMORY...",
+            "> LOADING REACT & VITE PIPELINES...",
+            "> PAYSTACK & VERCEL TRANSACTION ENGINES ONLINE...",
+            "> SYSTEM OPERATIONAL. WELCOME, DANIEL."
+        ];
+
+        let logIndex = 0;
+        const terminalLogs = document.getElementById('terminal-logs');
+        const bootScreen = document.getElementById('boot-screen');
+
+        function runBootSequence() {
+            if (logIndex < logs.length) {
+                const p = document.createElement('p');
+                p.textContent = logs[logIndex];
+                terminalLogs.appendChild(p);
+                logIndex++;
+                setTimeout(runBootSequence, 350);
+            } else {
+                setTimeout(skipBoot, 600);
+            }
+        }
+
+        function skipBoot() {
+            bootScreen.style.opacity = '0';
+            setTimeout(() => {
+                bootScreen.style.display = 'none';
+            }, 700);
+        }
+
+        window.addEventListener('load', () => {
+            setTimeout(runBootSequence, 300);
+        });
+
+        // CV Modal controls
+        function openCvModal() {
+            document.getElementById('cv-modal').style.display = 'flex';
+        }
+        function closeCvModal() {
+            document.getElementById('cv-modal').style.display = 'none';
+        }
+
+        // Live Preview Modal controls
+        function openPreview(name, url) {
+            document.getElementById('preview-title').textContent = 'Live Preview: ' + name;
+            document.getElementById('preview-iframe').src = url;
+            document.getElementById('preview-modal').style.display = 'flex';
+        }
+        function closePreview() {
+            document.getElementById('preview-modal').style.display = 'none';
+            document.getElementById('preview-iframe').src = '';
+        }
+    </script>
+</body>
+</html>
